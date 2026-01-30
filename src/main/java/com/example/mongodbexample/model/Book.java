@@ -2,6 +2,7 @@ package com.example.mongodbexample.model;
 
 import lombok.Data;
 import org.springframework.boot.persistence.autoconfigure.EntityScan;
+import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -17,5 +18,6 @@ public class Book {
     private String isbn;
     private String category;
     private Integer pageCount;
+    @CreatedDate
     private LocalDateTime publishDate;
 }

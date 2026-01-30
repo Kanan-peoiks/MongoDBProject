@@ -5,10 +5,9 @@ import com.example.mongodbexample.dto.BookResponse;
 import com.example.mongodbexample.model.Book;
 import com.example.mongodbexample.repository.BookRepository;
 import com.example.mongodbexample.service.BookService;
+import com.example.mongodbexample.validation.ResourceNotFoundException;
 import org.springframework.data.domain.Sort;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.stream.Collectors;
